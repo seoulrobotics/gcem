@@ -160,3 +160,6 @@ tanh:
 
 tgamma:
 	$(GCEM_MAKE_CALL)
+
+pi:
+	$(GCEM_MAKE_CALL)

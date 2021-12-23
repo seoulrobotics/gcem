@@ -96,6 +96,8 @@ namespace gcem
     #include "gcem_incl/incomplete_beta_inv.hpp"
     #include "gcem_incl/incomplete_gamma.hpp"
     #include "gcem_incl/incomplete_gamma_inv.hpp"
+
+    #include "gcem_incl/pi.hpp"
 }
 
 #endif
