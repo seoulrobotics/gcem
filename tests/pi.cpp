@@ -65,8 +65,9 @@ int main()
     GCEM_TEST_COMPARE_VALS(gcem::pi_div, naive_pi_div, std::numeric_limits<float>::quiet_NaN());
     GCEM_TEST_COMPARE_VALS(gcem::pi_div, naive_pi_div, std::numeric_limits<float>::infinity());
     GCEM_TEST_COMPARE_VALS(gcem::pi_div, naive_pi_div, -std::numeric_limits<float>::infinity());
-
-    //
+    static_assert(gcem::pi<float>() == M_PIf32);
+    static_assert(gcem::pi<double>() == M_PIf64);
+    static_assert(gcem::pi<long double>() == M_PIf64x);
 
     print_final("pi");
 
