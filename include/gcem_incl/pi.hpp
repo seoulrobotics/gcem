@@ -4,7 +4,7 @@
 
 #pragma once
 
-
+//No separate return type as some other GCEM funcs due to unary arg.
 template<typename T>
 constexpr
 T
@@ -22,6 +22,12 @@ noexcept
     return( pi_mul(T(1)/ x) );
 }
 
-
-
+template<typename T>
+constexpr
+T
+pi()
+noexcept
+{
+    return T(GCEM_PI);
+}
 
